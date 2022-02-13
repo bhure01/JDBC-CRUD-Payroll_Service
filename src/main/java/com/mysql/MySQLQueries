@@ -1,0 +1,88 @@
+mysql> create table payroll_service;
+ERROR 4028 (HY000): A table must have at least one visible column.
+mysql> create table emp_payroll(id int auto_increment,name varchar(50),salary int,primary key(id));
+Query OK, 0 rows affected (0.84 sec)
+
+mysql> desc emp_payroll;
++--------+-------------+------+-----+---------+----------------+
+| Field  | Type        | Null | Key | Default | Extra          |
++--------+-------------+------+-----+---------+----------------+
+| id     | int         | NO   | PRI | NULL    | auto_increment |
+| name   | varchar(50) | YES  |     | NULL    |                |
+| salary | int         | YES  |     | NULL    |                |
++--------+-------------+------+-----+---------+----------------+
+3 rows in set (0.01 sec)
+
+mysql> select * from emp_payroll;
++----+------+--------+
+| id | name | salary |
++----+------+--------+
+|  1 | NULL |   NULL |
++----+------+--------+
+1 row in set (0.00 sec)
+
+mysql> select * from emp_payroll;
++----+-------+--------+
+| id | name  | salary |
++----+-------+--------+
+|  1 | NULL  |   NULL |
+|  2 | Datta |   2000 |
++----+-------+--------+
+2 rows in set (0.00 sec)
+
+mysql> select * from emp_payroll;
++----+-------+--------+
+| id | name  | salary |
++----+-------+--------+
+|  1 | NULL  |   NULL |
+|  2 | Datta |   2000 |
+|  3 | bhure |   3000 |
++----+-------+--------+
+3 rows in set (0.00 sec)
+
+mysql> select * from emp_payroll;
++----+-------+--------+
+| id | name  | salary |
++----+-------+--------+
+|  1 | NULL  |   NULL |
+|  2 | Datta |   2000 |
+|  3 | bhure |   3000 |
+|  4 | abc   |   3000 |
+|  5 | xyz   |   4000 |
++----+-------+--------+
+5 rows in set (0.00 sec)
+
+mysql> select * from emp_payroll;
++----+---------+--------+
+| id | name    | salary |
++----+---------+--------+
+|  1 | Jagdish |   5000 |
+|  2 | Datta   |   2000 |
+|  3 | bhure   |   3000 |
+|  4 | abc     |   3000 |
+|  5 | xyz     |   4000 |
++----+---------+--------+
+5 rows in set (0.00 sec)
+
+mysql> select * from emp_payroll;
++----+---------+--------+
+| id | name    | salary |
++----+---------+--------+
+|  1 | Jagdish |   5000 |
+|  2 | Datta   |   2000 |
+|  3 | bhure   |   3000 |
+|  4 | abc     |   3000 |
+|  5 | xyz     |   4000 |
++----+---------+--------+
+5 rows in set (0.00 sec)
+
+mysql> select * from emp_payroll;
++----+---------+--------+
+| id | name    | salary |
++----+---------+--------+
+|  1 | Jagdish |   5000 |
+|  2 | Datta   |   2000 |
+|  3 | bhure   |   3000 |
+|  4 | abc     |   3000 |
++----+---------+--------+
+4 rows in set (0.00 sec)
